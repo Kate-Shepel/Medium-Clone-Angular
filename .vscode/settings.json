@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true,
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/myfile"
+      ],
+      "url": "schemaURL"
+    }
+  ]
+}
