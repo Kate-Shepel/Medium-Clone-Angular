@@ -5,8 +5,6 @@ import {Store, select} from '@ngrx/store'
 import {registerAction} from '../../store/actions/register.action'
 import {Observable} from 'rxjs'
 import {isSubmittingSelector} from '../../store/selectors'
-import {AuthService} from '../../services/auth.service'
-import {CurrentUserInterface} from 'src/app/shared/currentUser.interface'
 import {RegisterRequestInterface} from '../../types/registerRequest.interface'
 
 @Component({
@@ -21,7 +19,6 @@ export class RegisterComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private store: Store,
-    private authService: AuthService,
   ) {}
 
   ngOnInit(): void {
