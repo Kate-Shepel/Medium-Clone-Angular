@@ -32,14 +32,13 @@ export class RegisterComponent implements OnInit {
   initializeForm(): void {
     this.form = this.fb.group({
       username: ['', Validators.required],
-      email: '',
-      password: '',
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     })
-    console.log(this.form.valid)
   }
 
   onSubmit(): void {
-    console.log(this.form.value)
+    console.log('submit', this.form.value, this.form.valid)
     this.store.dispatch(registerAction(this.form.value))
   }
 }
