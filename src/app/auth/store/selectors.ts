@@ -9,3 +9,5 @@ export const authFeature = createFeature({
 export const authFeatureSelector = authFeature.selectAuthState
 
 export const isSubmittingSelector = authFeature.selectIsSubmitting
+
+export const validationErrorsSelector = authFeature.selectValidationErrors
