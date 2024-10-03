@@ -8,6 +8,7 @@ import {AppComponent} from './app.component'
 import {AuthModule} from './auth/auth.module'
 import {HttpClientModule} from '@angular/common/http'
 import {EffectsModule} from '@ngrx/effects'
+import {TopBarModule} from './shared/modules/topBar/topBar.module'
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import {EffectsModule} from '@ngrx/effects'
       trace: false,
       traceLimit: 75,
     }),
+    TopBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
